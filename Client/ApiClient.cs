@@ -16,7 +16,7 @@ public class ApiClient
     }
 
     /// <summary>
-    /// Calls https://localhost:8080/widget/{id}
+    /// Calls https://{host:port}/widget/{id}
     /// and logs whether the response came from the fallback.
     /// </summary>
     public async Task<string> GetStatusAsync(int id, CancellationToken cancellationToken = default)
@@ -38,7 +38,7 @@ public class ApiClient
     }
     
     /// <summary>
-    /// Calls https://localhost:8080/widget/{id}
+    /// Calls https://{host:port}/widget/{id}
     /// and logs whether the response came from the fallback.
     /// </summary>
     public async Task<Widget> GetWidgetAsync(int id, CancellationToken cancellationToken = default)
